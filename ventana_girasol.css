@@ -48,3 +48,23 @@ header{
             transform: scale(1.2);
             cursor:pointer;
            }
+
+
+           .descarga{
+            margin-top: 312px;
+           font-size: 30px;
+           padding: 10px;
+           height: 60px;
+           font-family: monospace;
+           text-decoration: none;
+           border-style: solid;
+           background-color:#008f39;
+           color: white;
+           border-color:white;
+       }
+          
+       .descarga:hover{
+           background-color: white;
+           color: #008f39;
+           border-color: #008f39;
+       }

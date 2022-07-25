@@ -21,13 +21,15 @@ header{
     height: 200px;
 }
 .cont_base{
-    height: auto;
+    height: 1550px;
     width: 100%;
     display: block;
     justify-content: center;
     background-color: grey;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .base{
@@ -35,7 +37,7 @@ header{
     height: auto;
     display: block;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
 
@@ -49,6 +51,7 @@ header{
 
 .titulo{
     text-align: center;
+    margin-top: 30px;
     font-size: 40px;
     font-family: monospace;
     background-color:yellow;}
@@ -97,4 +100,22 @@ header{
     font-family: monospace;
     font-size: 20px;
      margin: 25px;
+}
+
+.descarga{
+   
+   font-size: 25px;
+   padding: 10px;
+   font-family: monospace;
+   text-decoration: none;
+   border-style: solid;
+   background-color:#008f39;
+   color: white;
+   border-color:white;
+}
+  
+.descarga:hover{
+   background-color: white;
+   color: #008f39;
+   border-color: #008f39;
 }
