@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos</title>
+    <script defer src="ventana_calculos.js"></script> 
+    <link rel="stylesheet" href="ventana_calculos.css">
+    
+</head>
+<body>
+     
+    <div class="contenedor">
+        <ul class="ul">
+          <li class="icono"><img id="icono" src="icono.posta.png" alt=""></li>
+          <li class="li">MERMAS POR HUMEDAD</li>
+          <li class="li">CONVERSOR</li>
+          <li class="li">PH MAÍZ</li>
+       </ul>
+     
+
+    <div class="subcontenedor">
+        <div class="bloque">
+            <form id="formulario">
+                <select id="selector">
+                    <option value="1">Maíz</option>
+                    <option value="2">Soja</option>
+                    <option value="3">Trigo</option>
+                    <option value="4">Sorgo</option>
+                    <option value="5">Cebada Cervecera</option>
+                    <option value="6">Cebada Forrajera</option>
+                    <option value="7">Maní Ind. Aceitera</option>
+                    <option value="8">Girasol</option>
+                </select>
+                <input type="number" name="Kilogramos" id="kilogramos" placeholder="Kilogramos">
+                <input type="number" name="Humedad" id="humedad" placeholder="Humedad">
+                <input type="button" id="calcular" value="CALCULAR" onclick="mermas();">
+
+               
+            </form>
+
+            <table class="tabla">
+                <tr class="tr">
+                    <td class="td">Mermas</td>
+                    <td>%</td>
+                    <td>Kg.</td>
+                    <td>Kg.Netos</td>
+                </tr>
+                <tr>
+                    <td>Merma por humedad</td>
+                    <td id="res"></td>
+                    <td id="res_merma_hum_kilos"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Merma por manipuleo</td>
+                    <td id="resultado_merma_manipuleo"></td>
+                    <td id="resultado_merma_manipuleo_kilos"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Merma a aplicar</td>
+                    <td></td>
+                    <td id="resultado_merma_aplicar_kilos"></td>
+                    <td id="resultado_merma_aplicar_kn"></td>
+                </tr>
+                <tr id="m_v">
+                    <td id="titulo_volatil">Merma volatil</td>
+                    <td id="resultado_mermavolatil"></td>
+                    <td id="resultado_merma_volatil_kilos"></td>
+                    <td id="resultado_merma_volatil_kn"></td>
+                </tr>
+                <div class="caja_btn">
+                    <input type="checkbox" id="checkbox" onclick="fun_merma_volatil();">
+                    <label id="texto_check" for="chekbox">Merma volatil</label>
+                </div>
+            </table>
+        
+        </div>
+        <div class="bloque"> 
+            <form>
+                <b class="tex_radio-group">ELIJA OPCION:</b>
+                <input type="radio" id="radio1" name="conv" value="TC A SSS">
+                <label id="texto_radio" for="radio1">TC A SSS</label>
+                <input type="radio" id="radio2" name="conv" value="SSS A TC">
+                <label id="texto_radio" for="radio2">SSS A TC</label>
+                <input type="number" name="proteina" id="pro" placeholder="Resultado TC o S.S.S">
+                <input type="number" name="Hume_con" id="humedad_con" placeholder="Humedad">
+                <input type="button" id="calcular_con" value="CALCULAR" onclick="con();">
+                <p id="resultado_con"></p>
+            </form>
+        </div>
+        <div class="bloque"> 
+            
+            <input type="number" name="ph" id="ph" placeholder="Gramos en 1/4 de 1l">
+            <input type="number" name="Hume" id="humedad_ph" placeholder="Humedad">
+            <input type="button" id="calcular_ph" value="CALCULAR" onclick="ph_f();">
+            <p id="resultado_ph"></p>
+        
+        </div>            
+    </div>  
+
+    </div>
+    
+    <img src="" id="clima"></p>
+</body>
+</html>

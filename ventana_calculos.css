@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    height: 100px;
+    background-color: #008f39;
+
+}
+body{
+    background-color: gold;
+}
+#icono{
+    height: 100px;
+    display: flex;
+    width: 100%;
+    border-radius: 5px;;
+}
+
+.contenedor .ul{
+    width: 100%;
+    height: 185px;
+    background-color:#008f39;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items:center;
+
+}
+.contenedor .li{
+    background-color:#008f39;
+    height: 100px;
+    padding: 4em;
+    margin: 0 0 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: monospace;
+    font-size: 23px;
+    color:white;
+}
+
+.contenedor .li.activo{
+    background-color: gold;
+    height: 100px;
+    color: black;
+
+}
+
+.contenedor .subcontenedor{
+    background-color: gold;
+    position: relative;
+}
+
+.contenedor .bloque{
+    background-color: gold;
+    padding: 1em;
+    position: absolute;
+    top:0;
+    width: 100%;
+    opacity:0;
+
+}
+
+.contenedor .bloque.activo {
+    opacity: 1;
+    z-index: 999;
+}
+
+.img{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;}
+
+#kilogramos{
+    display: block;
+    border-style: solid;
+    font-family: monospace;
+    border-color: #008f39;
+    color: #008f39;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    height: 40px;
+    text-align: center;}
+
+#humedad{
+        display: block;
+        border-style: solid;
+        font-family: monospace;
+        border-color: #008f39;
+        color: #008f39;
+        margin-left: auto;
+        margin-top: 50px;
+        margin-right: auto;
+        height: 40px;
+        text-align: center;}
+
+#calcular{
+    border-radius:50%;
+    border-style: solid;
+    border-color: #008f39;
+    color:#008f39;
+    font-family: monospace;
+    height: 80px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+}
+#calcular_ph{
+    border-radius:50%;
+    border-style: solid;
+    border-color: #008f39;
+    color:#008f39;
+    font-family: monospace;
+    height: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-top: 70px;
+}
+#calcular_con{
+    border-radius:50%;
+    border-style: solid;
+    border-color: #008f39;
+    color:#008f39;
+    font-family: monospace;
+    height: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    margin-top: 70px;}
+
+.tabla{
+    background-color: white;
+    font-family: monospace;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-style: solid ;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+ #m_v{
+    opacity: 0;
+   
+}
+
+
+#checkbox{
+    height: 20px;
+    width: 20px;
+    margin-top:auto;
+    margin-bottom:auto;
+    align-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+#texto_check{
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.caja_btn{
+    
+    margin-left: 30%;
+}
+
+
+.tabla  td{
+    border-style: solid ;
+    padding: 10px;
+}
+
+#selector{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    height: 50px;
+    width: 160px;
+    font-family: monospace;
+    margin-top: 40px;
+}
+
+#ph{
+    display: block;
+    border-style: solid;
+    font-family: monospace;
+    border-color: #008f39;
+    color: #008f39;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    font-size: 30px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;}
+
+#humedad_ph{
+        display: block;
+        border-style: solid;
+        font-family: monospace;
+        border-color: #008f39;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        color: #008f39;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;}
+
+#resultado_ph{
+    display: block;
+    text-align: center;
+    font-family: monospace;
+    color: black;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    height: 30px;
+ 
+}
+
+#pro{
+    display: block;
+    border-style: solid;
+    font-family: monospace;
+    border-color: #008f39;
+    color: #008f39;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;}
+
+#humedad_con{
+        display: block;
+        border-style: solid;
+        font-family: monospace;
+        border-color: #008f39;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        color: #008f39;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;}
+
+#resultado_con{
+    display: block;
+    text-align: center;
+    font-family: monospace;
+    color: black;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    height: 30px;
+ 
+}
+#radio1{
+    margin-top: 10px;
+    margin-left: 10px;
+  
+}
+
+#radio2{
+    margin-top: 10px;
+    
+}
+
+#texto_radio{
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.tex_radio-group{
+    font-family: monospace;
+    font-size: 18px; 
+}
+
+
+.desc{
+font-family: monospace;
+font-size: 20px;
+ margin: 25px;}
+
+.titulos_item{
+text-align: left;
+font-size: 25px;
+font-family: monospace;}
+
+.titulo_intermedio{
+text-align: center;
+font-size: 35px;
+font-family: monospace;
+}
+.desc_2{
+text-align: center;
+font-family: monospace;
+font-size: 20px;
+ margin: 25px;
+}
+
+.items{
+    font-family: monospace;
+    margin: 25px;
+    font-size: 20px;
+    display: flex;
+}
+
+.titulo3{
+text-align: left;
+font-size: 30px;
+font-family: monospace;
+margin: 25px;
+}

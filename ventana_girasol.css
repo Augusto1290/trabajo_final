@@ -1,0 +1,50 @@
+.portada{
+    display: flex;
+    width: 70%;
+    float: right;
+    height: 200px;
+}
+.icono{
+    display: flex;
+    float: left;
+    width: 10%;
+}
+*{
+    margin:0 auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+header{
+    background-color: #008f39;
+    height: 200px;
+}
+.cont_base{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    font-family: monospace;
+    background-color: white;}
+
+ .img{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;}
+
+        .img:hover{
+            transform: scale(1.2);
+            cursor:pointer;
+           }

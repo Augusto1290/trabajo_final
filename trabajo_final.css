@@ -1,0 +1,315 @@
+*{margin:0;
+box-sizing: border-box;}
+
+.icon_w{
+    height: 13px;
+    width: 14px;
+}
+
+.btn_w{
+    height: 55px;
+    width: 55px;
+    position: fixed;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #008f39;
+    color:white;
+    border-radius: 50px;
+    border-color: white;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+
+
+#icono{
+    height: 100px;
+    display: flex;
+    width: 4.5%;
+    border-radius: 5px;;
+}
+
+header{
+    display: flex;
+    background-color: #008f39;
+    width: 100%;
+}
+
+.barra_de_navegacion{
+    height: 100px;
+    background-color:#008f39;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    float:left;
+    border-bottom:  solid;
+    border-bottom-color:  gold;
+}
+
+.navbar-nav ul{
+    list-style: none;
+}
+.navbar-nav > li {
+    display: inline-block;
+    background-color:#008f39;
+    text-align: center;
+    position: relative;
+    padding-top: 17px;
+    }
+
+.navbar-nav > li > a{
+    color: white;
+    padding: 20px;
+    text-align:center;
+    font-family: monospace;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.navbar-nav > li >  a:hover{
+    background: gold;
+    color: #008f39;
+    
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    width: 120%;
+    text-align: left;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #008f39;
+    font-family: monospace;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.navbar-nav li:hover .submenu {
+    display: block;
+    background: gold;
+    color: #008f39;
+    
+}
+
+.grid{
+    margin-top: 0;
+    display: grid;  
+    grid-template-columns:auto auto auto;
+    height: 500px;
+    text-align: center;
+    line-height: 200px;
+}
+
+
+.cajas  {
+    border-style: solid;
+    border-color: #008f39;
+    font-family: monospace;
+    text-align: center;
+    font-size: 30px;
+    list-style: none;
+    box-shadow: 5px 1px  10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    cursor: pointer;
+}
+.cajas {
+    text-decoration: none;
+    color:#008f39;
+ }
+
+ 
+ .cajas:hover{
+    box-shadow: 10px 10px  30px rgba(0, 0, 0, 0.8);
+    transform: translatey(-1%);
+    background-color: gold;
+    color:#008f39;
+}
+ 
+
+
+
+.slider{
+   
+    width: 100%;
+    height: 700px;
+    margin: 0;
+    background-color:#008f39;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    width: 300%;
+    animation: cambio 10s infinite linear;
+    
+}
+
+.slider  li{
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+    height: 700px;
+    object-fit:contain;
+}
+
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+    
+}
+
+footer{
+    background-color: #008f39;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+     margin: auto;
+    }
+
+.botones{
+       text-align: center;
+       width: 100%;
+       display: flex;
+       height: 100px;
+       margin-top: 50px;
+    }
+
+.c1{
+    width: 33.3%;
+    display: flex;
+    
+
+    }    
+.c2{
+    width: 33.3%;
+   display: flex;
+ 
+  
+    }
+
+
+.c3{
+    display: block;
+    margin-top: 50px;
+    width: 33.3%;
+   
+    
+}
+
+.texto_iconos{
+    font-family: monospace;
+    color: white;
+    font-size: 15px;;
+    padding-top: 70px;
+    margin-left: 10px;
+    text-align: center;
+    
+}
+
+.email {
+    color: white;
+    padding: 40px;
+    height: 50px;
+    width: 60px;;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    z-index: 100;
+ 
+}
+
+
+.cafecito {
+        background-color: #008f39;
+        
+        }
+
+    
+
+.instagram{
+    color: white;
+    padding: 40px;
+    height: 50px;
+    width: 60px;;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+    z-index: 100;
+    
+    }
+
+.play_img{
+    height: 75px;
+    padding: auto;
+    
+}
+
+    #loc{
+     font-family: monospace;
+     color:white;
+     font-size: 18px; 
+     text-align: left; 
+     padding: 10px;
+     display: inline-block;
+     list-style: none; 
+    }
+
+    #nav_temp{
+        font-family: monospace;
+        color:white;
+        font-size: 18px; 
+        display: inline-block;  
+        list-style: none;
+       }
+
+    #clima{
+        
+        padding: 30px;
+
+        margin:0 0 0 50px;
+        
+    }
+        
+    
+
+    #caja_clima{
+        float: right;
+        position: absolute;
+        width: 40%;
+        right: 0;
+    }
+
+    #icon_img{
+        font-family: monospace;
+        color:white;
+        font-size: 18px; 
+        text-align: left;
+        display: inline-block;
+        list-style: none; 
+       }
+   
+
+   
+    
+
