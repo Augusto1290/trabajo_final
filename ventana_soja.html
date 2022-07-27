@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="barra_oculta.js"></script>
     <link rel="stylesheet" href="ventana_soja.css">
     <link rel="stylesheet" href="fontello-edbbf877/css/fontello.css">
     <title>Soja</title>
@@ -11,14 +12,24 @@
 
 <body>
     <header>
-        <img class="portada "src="SOJA/soja.png">
-        <img class="icono" src="icono.posta.png">
+        <nav class="barra_de_navegacion">
+            <img class="icono" src="icono.posta.png">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href=#danados_s>Dañados</a></li>
+            <li class="nav-item"><a class="nav-link" href=#verdes_s>Granos verdes</a</li>
+            <li class="nav-item"><a class="nav-link" href=#gn>Granos negros</a>
+            <li class="nav-item"><a class="nav-link" href=#q>Quebrados y/o partidos</a>
+            <li class="nav-item"><a class="nav-link" href=#a>Amohosados</a>
+            <li class="nav-item"><a class="nav-link" href=#rt>Revolcados en tierra</a>
+          </ul>
+          </nav>
     </header>
     <div class="cont_base">
         <img class="base" src="SOJA/soja_base_posta.png">
         <a class="descarga" href="SOJA/soja_base_posta.png" download="Base_soja"><i class="icon-download"></i></a>
     </div>
-    <h1 class="titulo">GRANOS DAÑADOS</h1>
+    <h1 id="danados_s" class="titulo">GRANOS DAÑADOS</h1>
     <div class="cont_soja">
         <p class="desc">Son aquellos granos o pedazos de granos de soja que presenten alteración sustancial en su color, forma y/o textura normal interna y externa, no debiéndose castigar como tales a aquellos granos que presenten solamente manchas o alteraciones en la superficie conservando su parte interna inalterada.</p>
         <img class="img" src="soja/granos_danados_soja_.png">
@@ -40,23 +51,23 @@
         <p class="desc">Comprende todo grano o pedazo de grano totalmente deteriorado por procesos avanzados de descomposición.</p>
         <img class="img" src="soja/podridos_soja.png">
         <img class="img" src="soja/granos_fermentados_ardidos_2.png">
-        <h2 class="titulo_intermedio">GRANOS VERDES</h2>
+        <h2 id="verdes_s" class="titulo_intermedio">GRANOS VERDES</h2>
         <p class="desc_2">Todo grano o pedazo de grano que presente externamente cualquier intensidad de coloración verdosa total o parcial.</p>
         <img class="img" src="soja/granos_verdes_soja.png">
         <img class="img" src="soja/granos_verdes_soja_2.png">
         <img class="img" src="soja/granos_verdes_soja_3.png">
         <img class="img" src="soja/granos_verdes_soja_4.png">
         <img class="img" src="soja/granos_verdes_soja_5.png">
-        <h2 class="titulo_intermedio">GRANOS NEGROS</h2>
+        <h2 id="gn" class="titulo_intermedio">GRANOS NEGROS</h2>
         <p class="desc_2">Son aquellos granos o pedazos de granos de soja cuya cáscara sea de color negro, conservando su interior de coloración y textura normal.</p>
         <img class="img" src="soja/granos_negros_soja.png">
-        <h2 class="titulo_intermedio">GRANOS QUEBRADOS Y/O PARTIDOS</h2>
+        <h2 id="q" class="titulo_intermedio">GRANOS QUEBRADOS Y/O PARTIDOS</h2>
         <p class="desc_2">Son aquellos pedazos de granos de soja, cualquiera sea su tamaño.</p>
         <img class="img" src="soja/quebrados_soja.jpeg">
-        <h2 class="titulo_intermedio">GRANOS AMOHOSADOS</h2>
+        <h2 id="a" class="titulo_intermedio">GRANOS AMOHOSADOS</h2>
         <p class="desc_2">Se considera como tal a todo lote que presente una elevada proporción de granos que llevan moho adherido en la mayor parte de su superficie.</p>
         <img class="img" src="soja/granos_amohosados.png">
-        <h2 class="titulo_intermedio">GRANOS REVOLCADOS EN TIERRA</h2>
+        <h2 id="rt" class="titulo_intermedio">GRANOS REVOLCADOS EN TIERRA</h2>
         <p class="desc_2">Se considera como tal a todo lote que presente una elevada proporción de granos que llevan tierra adherida en la mayor parte de su superficie.</p>
         <img class="img" src="soja/granos_revolcados_en_tierra_soja.png">
     </div>

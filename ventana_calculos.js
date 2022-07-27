@@ -80,7 +80,7 @@ function mermas(){
 
        else {
         if (opcion==1 && hum <= 14.50 && hum > 0) {
-            window.alert("Humedad dentro de la tolerancia admitida");}}
+            alert("Humedad dentro de la tolerancia admitida, se considera maíz húmedo a valores superiores a 14.5");}}
 
      
     if (opcion==2 && hum> 13.5) {
@@ -117,7 +117,7 @@ function mermas(){
 
       else {
        if (opcion==2 && hum <= 13.50 && hum > 0) {
-           window.alert("Humedad dentro de la tolerancia admitida");}}
+           alert("Humedad dentro de la tolerancia admitida, se considera soja húmeda a valores superiores a 13.5");}}
 
     
            if (opcion==3 && hum> 14.0) {
@@ -154,7 +154,7 @@ function mermas(){
    
           else {
            if (opcion==3 && hum <= 14.50 && hum > 0) {
-               window.alert("Humedad dentro de la tolerancia admitida");}}
+               alert("Humedad dentro de la tolerancia admitida, se considera trigo húmedo a valores superiores a 14.0");}}
 
         
     if (opcion==4 && hum> 15.0) {
@@ -191,7 +191,7 @@ function mermas(){
 
       else {
        if (opcion==4 && hum <= 15.0 && hum > 0) {
-           window.alert("Humedad dentro de la tolerancia admitida");}}
+           alert("Humedad dentro de la tolerancia admitida, se considera sorgo húmedo a valores superiores a 15.0");}}
 
     
         
@@ -229,7 +229,7 @@ function mermas(){
 
       else {
        if (opcion==5 && hum <= 12.50 && hum > 0) {
-           window.alert("Humedad dentro de la tolerancia admitida");}}
+           alert("Humedad dentro de la tolerancia admitida, se considera cebada húmeda a valores superiores a 12.5");}}
 
     
            if (opcion==6 && hum> 14.0) {
@@ -266,7 +266,7 @@ function mermas(){
    
           else {
            if (opcion==6 && hum <= 14.0 && hum > 0) {
-               window.alert("Humedad dentro de la tolerancia admitida");}}
+               window.alert("Humedad dentro de la tolerancia admitida, se considera cebada húmeda a valores superiores a 14.0");}}
 
 
 
@@ -290,11 +290,20 @@ function mermas(){
                resultado_merma_aplicar_kilos.innerHTML=( Math.round(mermaaaplicark));
        
                mermaaaplicarkn = (kg - mermaaaplicark);
-               resultado_merma_aplicar_kn.innerHTML=(Math.round(mermaaaplicarkn));}
+               resultado_merma_aplicar_kn.innerHTML=(Math.round(mermaaaplicarkn));
+
+               resultado_mermavolatil.innerHTML="";
+                               
+                    
+               resultado_merma_volatil_kilos.innerHTML="";
+               
+        
+               
+               resultado_merma_volatil_kn.innerHTML="";}
        
               else {
                if (opcion==7 && hum <= 9.0 && hum > 0) {
-                   window.alert("Humedad dentro de la tolerancia admitida");}}
+                   alert("Humedad dentro de la tolerancia admitida, se considera maní húmedo a valores superiores a 9.0");}}
 
             
      
@@ -326,21 +335,14 @@ function mermas(){
                     mermavolatil_k = ((mermaaaplicarkn * 0.30) / 100);
                     resultado_merma_volatil_kilos.innerHTML=(Math.round(mermavolatil_k));
                     mermavolatil_k = Math.round(mermavolatil_k);
-            
-                  
-                    resultado_merma_volatil_kn.innerHTML= mermavolatil_por = "";
-                  
-             
-                    
-                    resultado_merma_volatil_kilos.innerHTML="";
-                    
-             
-                    
-                    resultado_merma_volatil_kn.innerHTML="";}
+
+                    mermavolatil_kn = (mermaaaplicarkn - mermavolatil_k);
+                    resultado_merma_volatil_kn.innerHTML=(Math.round(mermavolatil_kn));
+            }
             
                    else {
                     if (opcion==8 && hum <= 11.0 && hum > 0) {
-                        window.alert("Humedad dentro de la tolerancia admitida");}}}
+                        alert("Humedad dentro de la tolerancia admitida, se considera girasol húmedo a valores superiores a 14.5");}}}
 
 
         

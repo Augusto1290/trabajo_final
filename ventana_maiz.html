@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maiz</title>
+    <script defer src="barra_oculta.js"></script>
     <link rel="stylesheet" href="ventana_maiz.css">
     <link rel="stylesheet" href="fontello-edbbf877/css/fontello.css">
 </head>
 <body>
     <header>
-        <img src="maiz3.png">
-        <img class="icono" src="icono.posta.png">
+     
+        <nav class="barra_de_navegacion">
+      <ul class="navbar-nav">
+      <img class="icono" src="icono.posta.png">
+      <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
+      <li class="nav-item"><a class="nav-link" href=#tipos>Tipos</a></li>
+      <li class="nav-item"><a class="nav-link" href=#danados>Dañados</a</li>
+      <li class="nav-item"><a class="nav-link" href=#quebrados>Quebrados</a>
+      <li class="nav-item"><a class="nav-link" href=#picados>Picados</a>
+      <li class="nav-item"><a class="nav-link" href=#amo>Amohosados</a>
+    </ul>
+        </nav>
     </header>
     <div class="cont_estandar">
         <img class="estandar" src="estandar_maiz_posta.png">
@@ -19,7 +30,7 @@
         <i class="icon-download"></i></a>
     </div>
     <h1 class="titulo">GRANOS DE MAIZ</h1>
-    <div class="cont_tipo_duro"><h2 class="tipo_duro">TIPO DURO:</h2>
+    <div id="tipos" class="cont_tipo_duro"><h2 class="tipo_duro">TIPO DURO:</h2>
         <p class="desc_tipo_duro">Se clasificarán en este tipo todos aquellos maíces cuyos granos sean de naturaleza córnea, predominantemente vítrea (más de la mitad de la constitución de su endosperma).</p>
         <h3 class="color_colorado">-COLOR: Colorado</h3>
         <img class="img" src="maiz_duro_colo.png">
@@ -34,7 +45,7 @@
         <img class="img" src="maiz/maiz_dentado.png">
         <img class="img" src="maiz/maiz_dentado_2.png">
     </div>
-    <h1 class="titulo_danados">DAÑADOS</h1>
+    <h1 id="danados" class="titulo_danados">DAÑADOS</h1>
     <div class="cont_danados">
         <h2 class="brotados">-Brotados:</h2>
         <p class="desc_brotados">Son aquellos en los que se ha iniciado visiblemente el proceso de germinación. Tal hecho se manifiesta por una ruptura de la cubierta del germen, a través de la cual asoma el brote.</p>
@@ -58,15 +69,15 @@
     </div>
 
     <div class="cont_qpa">
-        <h1 class="titulo_qpa">QUEBRADOS</h1>
+        <h1 id="quebrados" class="titulo_qpa">QUEBRADOS</h1>
         <P class="desc_qpa">Son aquellos pedazos de granos de maíz que pasen por una zaranda con agujeros de 4.76mm ± 0.013.</P>
         <img class="img" src="maiz/quebrado_maiz.jpeg">
 
-        <h1 class="titulo_qpa">PICADOS</h1>
+        <h1 id="picados" class="titulo_qpa">PICADOS</h1>
         <P class="desc_qpa">Son aquellos que presentan perforaciones causadas por el ataque de insectos o arácnidos.</P>
         <img class="img" src="maiz/maiz_picados.png">
 
-        <h1 class="titulo_qpa">AMOHOSADOS</h1>
+        <h1 id="amo" class="titulo_qpa">AMOHOSADOS</h1>
         <P class="desc_qpa">Se considera como tal a todo lote que presente una elevada proporción de granos que llevan moho adherido en la mayor parte de su superficie.</P>
         <img class="img" src="maiz/maiz_amohosados.png">
     </div>

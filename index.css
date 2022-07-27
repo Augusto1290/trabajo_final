@@ -29,7 +29,7 @@ box-sizing: border-box;}
     height: 100px;
     display: flex;
     width: 4.5%;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 header{
@@ -77,27 +77,6 @@ header{
     
 }
 
-.submenu{
-    position: absolute;
-    display: none;
-    width: 120%;
-    text-align: left;
-}
-.submenu li a{
-    display: block;
-    padding: 15px;
-    color: #008f39;
-    font-family: monospace;
-    font-size: 20px;
-    text-decoration: none;
-
-}
-.navbar-nav li:hover .submenu {
-    display: block;
-    background: gold;
-    color: #008f39;
-    
-}
 
 .grid{
     margin-top: 0;
@@ -308,6 +287,19 @@ footer{
         display: inline-block;
         list-style: none; 
        }
+
+    .pie_de_pagina{
+      font-family: monospace;
+      padding: 5px;
+      height: 25px;
+      color: white;
+      text-align: center;
+      width: 100%;
+      border-top-style: solid;
+      border-top-color: white;
+      bottom: 0;
+      position: absolute;
+    }
 
 
     

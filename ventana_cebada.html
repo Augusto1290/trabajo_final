@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cebada</title>
+    <script defer src="barra_oculta.js"></script>
     <link rel="stylesheet" href="ventana_cebada.css">
     <link rel="stylesheet" href="fontello-edbbf877/css/fontello.css">
 </head>
-<header>
-    <img class="portada "src="cebada/portaa_cebadda.png">
-    <img class="icono" src="icono.posta.png">
-</header>
+
 <body>
+    <header>
+        <nav class="barra_de_navegacion">
+            <img class="icono" src="icono.posta.png">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href=#danados_c>Dañados</a></li>
+            <li class="nav-item"><a class="nav-link" href=#gp>Granos pelados</a</li>
+            <li class="nav-item"><a class="nav-link" href=#gq>Quebrados</a>
+            <li class="nav-item"><a class="nav-link" href=#h>Hongos</a>
+          </ul>
+          </nav>
+    </header>
     <div class="cont_base">
         <h1 class="titulo">BASE DE COMERCIALIZCIÓN CEBADA CERVECERA</h1>
         <img class="base" src="cebada/base_cebada_cervecera.png">
@@ -22,7 +32,7 @@
         <a class="descarga" href="cebada/cebada_forrajera_base.png" download="Estandar_cebada_forrajera"><i class="icon-download"></i></a>
         
     </div>
-    <h1 class="titulo">GRANOS DAÑADOS</h1>
+    <h1 id="danados_c" class="titulo">GRANOS DAÑADOS</h1>
     <div class="cont_cebada">
         <p class="desc">Todos aquellos granos o pedazos de granos que presentan alteraciones sustancial en su constitución. Se consideran como tales a los brotados, verdes, ardidos y/o dañados por calor, calcinados, roídos por isoca y roídos en su germen.</p>
 
@@ -46,16 +56,16 @@
         <p class="desc">Son aquellos granos o pedazos de granos que presentan un oscurecimiento en su tonalidad natural, debido a un proceso fermentativo o a la acción de elevadas temperaturas.</p>
         <img class="img_grandes" src="cebada/calcinados_cebada.jpg">
 
-        <h2 class="titulo_intermedio">GRANOS PELADOS</h2>
+        <h2 id="gp" class="titulo_intermedio">GRANOS PELADOS</h2>
         <p class="desc_2">Todos aquellos granos que tienen un tercio o más del tegumento removido, o que haya desaparecido total o parcialmente sobre el germen.</p>
         <img class="img" src="cebada/pelados.jpeg">
         <img class="img" src="cebada/pelados_2.jpeg">
 
-        <h2 class="titulo_intermedio">GRANOS QUEBRADOS</h2>
+        <h2 id="gq" class="titulo_intermedio">GRANOS QUEBRADOS</h2>
         <p class="desc_2">Es toda porción de grano de cebada cualquiera sea su tamaño.</p>
         <img class="img" src="cebada/quebrado_cebada.png">
 
-        <h2 class="titulo_intermedio">HONGOS</h2>
+        <h2 id="h" class="titulo_intermedio">HONGOS</h2>
         <h3 class="titulos_item">-Alternaria: Puntos negros</h3>
         <img class="img" src="cebada/fusaryum_cebada.png">
 

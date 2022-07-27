@@ -286,6 +286,7 @@ body{
 
 #radio2{
     margin-top: 10px;
+    margin-left: 15px;
     
 }
 
@@ -334,4 +335,19 @@ text-align: left;
 font-size: 30px;
 font-family: monospace;
 margin: 25px;
+}
+
+.menu{
+    background-color:#008f39;
+    height: 100px;
+    padding: 4em;
+    margin: 0 0 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    list-style: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: monospace;
+    font-size: 23px;
+    color:white;
 }

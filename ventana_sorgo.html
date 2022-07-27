@@ -5,26 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorgo</title>
+    <script defer src="barra_oculta.js"></script>
     <link rel="stylesheet" href="ventana_sorgo.css">
     <link rel="stylesheet" href="fontello-edbbf877/css/fontello.css">
 </head>
 <header>
-    <img class="portada "src="sorgo_portada.png">
-    <img class="icono" src="icono.posta.png">
+   
+    <nav class="barra_de_navegacion">
+  <img class="icono" src="icono.posta.png">
+  <ul class="navbar-nav">
+  <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
+  <li class="nav-item"><a class="nav-link" href=#color>Color</a></li>
+  <li class="nav-item"><a class="nav-link" href=#danados_s>Dañados</a</li>
+  <li class="nav-item"><a class="nav-link" href=#picados_s>Picados</a>
+  <li class="nav-item"><a class="nav-link" href=#quebrados_s>Quebrados</a>
+  <li class="nav-item"><a class="nav-link" href=#amohosados_s>Amohosados</a>
+</ul>
+</nav>
 </header>
 <body>
     <div class="cont_estandar">
         <img class="estandar" src="sorgo/estandar_sorgo.png">
         <a class="descarga" href="sorgo/estandar_sorgo.png" download="Estandar_sorgo"><i class="icon-download"></i></a>
     </div>
-    <h1 class="titulo">COLOR</h1>
+    <h1 id="color" class="titulo">COLOR</h1>
     <div>
         <h3 class="titulos_item">-Colorado</h3>
         <img class="img" src="sorgo/sorgo_colorado.png">
         <h3 class="titulos_item">-Blanco</h3>
         <img class="img" src="sorgo/sorgo_blanco.png">
 
-        <h2 class="titulo_intermedio">GRANOS DAÑADOS</h2>
+        <h2 id="danados_s" class="titulo_intermedio">GRANOS DAÑADOS</h2>
         <h3 class="titulos_item">-Brotados</h3>
         <p class="desc">Son aquellos en los que se ha iniciado visiblemente el proceso de germinación. Tal hecho se manifiesta por una ruptura de la cubierta del germen, a través de la cual asoma el brote.</p>
         <img class="img" src="sorgo/granos_brotados_sorgo.png">
@@ -33,15 +44,15 @@
         <p class="desc">Son aquellos que se desmenuzan cuando se hace una breve presión sabre los mismos, mostrando en su interior un aspecto blanquecino y yesoso.</p>
         <img class="img" src="sorgo/calcinados_sorgo.png">
 
-        <h2 class="titulo_intermedio">PICADOS</h2>
+        <h2 id="picados_s" class="titulo_intermedio">PICADOS</h2>
         <p class="desc_2">Son aquellos que presentan perforaciones causadas por el ataque de insectos.</p>
         <img class="img" src="sorgo/picados_sorgo.png">
 
-        <h2 class="titulo_intermedio">QUEBRADOS</h2>
+        <h2 id="quebrados_s" class="titulo_intermedio">QUEBRADOS</h2>
         <p class="desc_2">Son aquellos pedazos de granos de sorgo que pasen por una zaranda de agujeros triangualares (triángulos equiláteros) de 1.98mm ± 0.013mm.</p>
         <img class="img" src="sorgo/quebrado_sorgo.jpeg">
 
-        <h2 class="titulo_intermedio">AMOHOSADOS</h2>
+        <h2 id="amohosados_s" class="titulo_intermedio">AMOHOSADOS</h2>
         <p class="desc_2">Se considera como tal a todo lote que presente una elevada proporción de granos que llevan moho adherido en la mayor parte de su superficie.</p>
         <img class="img" src="sorgo/amohosados_sorgo.png">
 

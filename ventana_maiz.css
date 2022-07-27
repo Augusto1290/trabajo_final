@@ -1,13 +1,9 @@
-header img{
-    display: flex;
-    width: 70%;
-    float: right;
-    height: 200px;
-}
+
 .icono{
     display: flex;
     float: left;
-    width: 10%;
+    width: 4.5%;
+    
 }
 *{
     margin:0 auto;
@@ -18,7 +14,48 @@ body{
 }
 header{
     background-color: #008f39;
-    height: 200px;
+    width: 100%;
+    display: flex;
+   
+}
+.barra_de_navegacion{
+    height: 100px;
+    background-color:#008f39;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    float:left;
+    border-bottom:  solid;
+    border-bottom-color:  gold;
+    position: fixed;
+}
+
+.navbar-nav ul{
+    list-style: none;
+}
+.navbar-nav > li {
+    display: inline-block;
+    background-color:#008f39;
+    text-align: center;
+    position: relative;
+    padding-top: 17px;
+    }
+
+.navbar-nav > li > a{
+    color: white;
+    padding: 20px;
+    text-align:center;
+    font-family: monospace;
+    font-size: 22px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.navbar-nav > li >  a:hover{
+    background: gold;
+    color: #008f39;
+    
 }
 .cont_estandar{
     height: auto;
@@ -52,6 +89,8 @@ header{
     text-align: left;
     font-size: 25px;
     font-family: monospace;
+    margin-left: 30px;
+    margin-top: 10px;
 }
 .cont_tipo_duro{
     background-color: orange;
@@ -65,6 +104,7 @@ header{
     text-align: left;
     font-size: 25px;
     font-family: monospace;
+    margin-left: 30px;
 }
 .img{
     display: block;
@@ -84,18 +124,21 @@ header{
     text-align: left;
     font-size: 25px;
     font-family: monospace;
+    margin-left: 30px;
 }
 
 .color_blanco{
     text-align: left;
     font-size: 25px;
     font-family: monospace;
+    margin-left: 30px;
 }
 
 .tipo_dentado{
     text-align: left;
     font-size: 25px;
     font-family: monospace;
+    margin-left: 30px;
 }
 .cont_tipo_dentado{
     background-color: orange;
@@ -120,6 +163,7 @@ header{
         text-align: left;
         font-size: 25px;
         font-family: monospace;
+        margin-top:10px;
     }
 
 .desc_brotados{

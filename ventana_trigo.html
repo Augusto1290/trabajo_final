@@ -5,19 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trigo</title>
+    <script defer src="barra_oculta.js"></script>
     <link rel="stylesheet" href="ventana_trigo.css">
     <link rel="stylesheet" href="fontello-edbbf877/css/fontello.css">
 </head>
-<header>
-    <img class="portada" src="trigo/trigo_5.png">
-    <img class="icono" src="icono.posta.png">
-</header>
+
 <body>
+    <header>   
+        <nav id="barra_de_navegacion" class="barra_de_navegacion">
+            <img class="icono" src="icono.posta.png">
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href=#danados_t>Dañados</a></li>
+            <li class="nav-item"><a class="nav-link" href=#quebrados_t>Quebrados</a</li>
+            <li class="nav-item"><a class="nav-link" href=#panza>Panza blanca</a>
+            <li class="nav-item"><a class="nav-link" href=#pt>Punta sombreada</a>
+          </ul>
+          </nav>
+    </header>
      <div class="cont_estandar">
             <img class="estandar" src="trigo/estandar_trigo_posta.png">
             <a class="descarga" href="trigo/estandar_trigo_posta.png" download="Estandar_trigo"><i class="icon-download"></i></a>
      </div>
-     <h1 class="titulo">GRANOS DAÑADOS</h1>
+     <h1 id="danados_t" class="titulo">GRANOS DAÑADOS</h1>
      <div class="cont_trigo">
         <p class="desc">Son aquellos granos o pedazos de granos que presentan una alteración sustancial en su constitución. Se consideran como tales a los ardidos y/o dañados por calor, granos verdes, helados, brotados, calcinados, roídos por isoca y roídos en su germen.</p>
         <img class="img" src="trigo/granos_danados_trigo_2.png">
@@ -43,17 +53,17 @@
         <h3 class="titulos_item">-Granos roídos en su germen</h3>
         <p class="desc">Son aquellos carcomidos por larvas de insectos que atacan al cereal en planta y cuya parte afectada se presenta negruzca o sucia.</p>
         <img class="img" src="trigo/granos_roidos_en_su_germen_2.png">
-        <h2 class="titulo_intermedio">GRANOS QUEBRADOS Y/O CHUZOS</h2>
+        <h2 id="quebrados_t" class="titulo_intermedio">GRANOS QUEBRADOS Y/O CHUZOS</h2>
         <p class="desc_2">Son aquellos granos o pedazos de granos (no dañados) de trigo pan que pasen por una zaranda de agujeros acanalados de 1.6mm ± 0.013mm.</p>
         <img class="img" src="trigo/trigo_quebrado.jpeg">
-        <h2 class="titulo_intermedio">PANZA BLANCA</h2>
+        <h2 id="panza" class="titulo_intermedio">PANZA BLANCA</h2>
         <p class="desc_2">Son aquellos que se caracterizan por su textura almidonosa en una mitad o más del grano, que se aprecia por una coloración externa amarillenta definida.</p>
         <img class="img" src="trigo/panza_blanca_2.png">
-        <h2 class="titulo_intermedio">PUNTA SOMBREADA POR TIERRA</h2>
+        <h2 id="pt" class="titulo_intermedio">PUNTA SOMBREADA POR TIERRA</h2>
         <img class="img" src="trigo/punta_sombreada_por_tierra_trigo.png">
-        <h2 class="titulo_intermedio">PUNTA SOMBREADA POR CARBÓN</h2>
+        <h2  class="titulo_intermedio">PUNTA SOMBREADA POR CARBÓN</h2>
         <img class="img" src="trigo/punta_sombreada_por_carbon_trigo.png">
-        <h2 class="titulo_intermedio">REVOLCADO EN TIERRA</h2>
+        <h2  class="titulo_intermedio">REVOLCADO EN TIERRA</h2>
         <img class="img" src="trigo/revolcado_en_tierra_trigo.png">
     </div>
     
