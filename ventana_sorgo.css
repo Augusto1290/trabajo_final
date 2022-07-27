@@ -66,8 +66,8 @@ header{
     display: flex;
     justify-content: center;
     background-color: grey;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .estandar{
@@ -76,7 +76,7 @@ header{
 }
 
 .estandar:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor:pointer;
    }
 
