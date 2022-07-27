@@ -16,6 +16,7 @@ header{
     background-color: #008f39;
     width: 100%;
     display: flex;
+    margin-bottom: 20px;
    
 }
 .barra_de_navegacion{
@@ -28,6 +29,7 @@ header{
     border-bottom:  solid;
     border-bottom-color:  gold;
     position: fixed;
+
 }
 
 .navbar-nav ul{
@@ -65,6 +67,9 @@ header{
     display: flex;
     justify-content: center;
     background-color: grey;
+    padding-top: 100px;
+    padding-bottom: 10px;
+
 }
 
 .estandar{
@@ -74,7 +79,7 @@ header{
 
 
 .estandar:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor:pointer;
    }
 
@@ -115,7 +120,7 @@ header{
     border-radius: 10px;}
 
     .img:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
         cursor:pointer;
        }
 
