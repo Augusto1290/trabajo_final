@@ -200,7 +200,7 @@ footer{
     font-family: monospace;
     color: white;
     font-size: 15px;;
-    padding-top: 70px;
+    padding-top: 80px;
     margin-left: 10px;
     text-align: center;
     
@@ -214,8 +214,12 @@ footer{
     text-align: center;
     margin-top: 30px;
     margin-left: 100px;
-    z-index: 100;
+    font-size: 30px;
  
+}
+
+.email:hover{
+    color:gold;
 }
 
 
@@ -234,8 +238,12 @@ footer{
     text-align: center;
     margin-top: 30px;
     margin-left: 100px;
-    z-index: 100;
+    font-size: 30px;
     
+    }
+
+    .instagram:hover{
+        color:red
     }
 
 .play_img{
