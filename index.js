@@ -38,10 +38,6 @@
     const url_icon=`http:\\openweathermap.org/img/wn/${icon}.png`
     icon_img.src=url_icon;
     
-
-    
-
-  
  })
 })
   }

@@ -52,7 +52,7 @@ body{
 }
 
 .contenedor .subcontenedor{
-    background-color: gold;
+    background-color:gold;
     position: relative;
 }
 
@@ -350,4 +350,124 @@ margin: 25px;
     font-family: monospace;
     font-size: 23px;
     color:white;
+}
+
+.tabla_cotizaciones
+{
+    border-collapse: collapse;
+    border: 0.5px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: gainsboro;
+    width: 60%;
+   
+}
+
+.tabla_cotizaciones2
+{
+    border-collapse: collapse;
+    border: 0.5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 60%;
+    background-color: gainsboro;
+}
+
+#tc{
+    width: 195px;
+font-size: 18px;
+background-color: burlywood;
+}
+#tm{
+    width: 195px;
+font-size: 18px;
+background-color: orange;
+}
+#tg{
+    width: 195px;
+font-size: 18px;
+background-color: gray;
+}
+#ts{
+    width: 195px;
+font-size: 18px;
+background-color: sandybrown;
+}
+#tsor{
+    width: 195px;
+font-size: 18px;
+background-color: brown;
+}
+
+th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+   border-style:groove;
+   border-color: black;
+   font-family: monospace;
+   font-size:16px;
+   background-color: grey;
+   font-style:inherit;
+}
+
+td{
+    text-align: center;
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style:groove;
+    border-color: black;
+    font-family: monospace;
+    font-size: 20px;
+    color: #008f39;
+    background-color: gainsboro;
+    font-style:inherit;
+}
+#texto{
+    text-align: center;
+    color:black;
+    font-family: monospace;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-size: 17px;
+}
+#co_mar2{
+    font-size: 20px;
+    font-style: inherit;
+    color:black;
+}
+#co_trr2{
+    font-size: 20px;
+    color:black;
+    font-style:inherit;
+}
+#co_sorr2{
+    font-size: 20px;
+    color:black;
+    font-style: inherit;
+}
+#co_sore2{
+    font-size: 20px;
+    color:black;
+    font-style: inherit;
+}
+#co_gir2{
+    font-size: 20px;
+    color:black;
+    font-style: inherit;
+}
+#tapar{
+    height: 250px;
+    background-color:  gold;
+    font-style: inherit;
+}
+
+#precios_pizarra{
+    font-family: monospace;
+    margin-top: 50px;
+    text-align: center;
 }

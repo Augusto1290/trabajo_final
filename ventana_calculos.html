@@ -11,7 +11,7 @@
 </head>
 <body>
      
-    <div class="contenedor">
+ <div class="contenedor">
         <ul class="ul">
           <li class="icono"><img id="icono" src="icono.posta.png" alt=""></li>
           <a class="menu" href="index.html">MENU</a>
@@ -19,12 +19,79 @@
           <li class="li">CONVERSOR</li>
           <li class="li">PH MAÍZ</li>
        </ul>
+
      
 
-    <div class="subcontenedor">
+      <div class="subcontenedor" >
+        <table class="tabla_cotizaciones">
+            <tr class="tabla_cotizaciones2">
+            <th> </th>
+            <th> FECHA </th>
+            <th> COTIZACION COMPRA DIVISA </th>
+            <th> COTIZACION COMPRA BILLETE </th>
+            <th > COTIZACION VENTA DIVISA </th>
+            <th > COTIZACION VENTA BILLETE </th>
+            </tr>
+            <tr>
+                <th>OFICIAL</th>
+                <td id="fecha"></td>
+                <td id="co_cd"></td>
+                <td id="co_cb"></td>
+                <td id="co_vd"></td>
+                <td  id="co_vb"></td>
+            </tr>
+            <tr>
+                <th>BLUE</th>
+                <td id="fechab"></td>
+                <td id="coB_cd"></td>
+                <td id="coB_cb"></td>
+                <td id="coB_vd"></td>
+                <td  id="coB_vb"></td>
+            </tr>
+           </table>
+
+           <div>
+            <h1 id="precios_pizarra"></h1>
+           </div>
+            
+           
+
+           <table class="tabla_cotizaciones2">
+            <tr">
+            <th id="tc"> TRIGO </th>
+            <th id="tm"> MAIZ</th>
+            <th id="tg"> GIRASOL </th>
+            <th id="ts"> SOJA </th>
+            <th id="tsor"> SORGO </th>
+            </tr>
+            <tr>
+                <td id="co_tr"></td>
+                <td id="co_ma"></td>
+                <td id="co_gi"></td>
+                <td id="co_so"></td>
+                <td  id="co_sor"></td>
+            </tr>
+            <tr>
+                <td id="co_trr2"></td>
+                <td id="co_mar2"></td>
+                <td id="co_gir2"></td>
+                <td id="co_sore2"></td>
+                <td  id="co_sorr2"></td>
+            </tr>
+            <tr>
+                <td id="co_tr2"></td>
+                <td id="co_ma2"></td>
+                <td id="co_gi2"></td>
+                <td id="co_so2"></td>
+                <td  id="co_sor2"></td>
+            </tr>
+           </table>
+           <div id="texto">
+            Precios corrientes expresados en $/Tn por mercadería, entrega enseguida, pago contado, puesto sobre camión y/o vagón en zona Rosario.
+        </div>
         <div class="bloque">
             <form id="formulario">
-                <select id="selector">
+                <select aria-label="selector", id="selector">
                     <option value="1">Maíz</option>
                     <option value="2">Soja</option>
                     <option value="3">Trigo</option>
@@ -73,7 +140,7 @@
                     <td id="resultado_merma_volatil_kn"></td>
                 </tr>
                 <div class="caja_btn">
-                    <input type="checkbox" id="checkbox" onclick="fun_merma_volatil();">
+                    <input aria-label="boton" type="checkbox" id="checkbox" onclick="fun_merma_volatil();">
                     <label id="texto_check" for="chekbox">Merma volatil</label>
                 </div>
             </table>
@@ -91,6 +158,8 @@
                 <input type="button" id="calcular_con" value="CALCULAR" onclick="con();">
                 <p id="resultado_con"></p>
             </form>
+            <div id="tapar"></div>
+
         </div>
         <div class="bloque"> 
             
@@ -98,12 +167,15 @@
             <input type="number" name="Hume" id="humedad_ph" placeholder="Humedad">
             <input type="button" id="calcular_ph" value="CALCULAR" onclick="ph_f();">
             <p id="resultado_ph"></p>
-        
-        </div>            
-    </div>  
+            <div id="tapar"></div>
 
-    </div>
+        
+        </div>   
+          
+      </div>  
+
+ </div>
     
-    <img src="" id="clima"></p>
+   
 </body>
 </html>

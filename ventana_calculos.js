@@ -429,17 +429,342 @@ function mermas(){
 
 
 
-   
- 
+  
+
     
+const c_cd=document.getElementById("co_cd");
+const c_cb=document.getElementById("co_cb");
+const c_vd=document.getElementById("co_vd");
+const c_vb=document.getElementById("co_vb");
+const fecha=document.getElementById("fecha");
+const cB_cd=document.getElementById("coB_cd");
+const cB_cb=document.getElementById("coB_cb");
+const cB_vd=document.getElementById("coB_vd");
+const cB_vb=document.getElementById("coB_vb");
+const fechab=document.getElementById("fechab");
+const co_ma=document.getElementById("co_ma");
+const co_tr=document.getElementById("co_tr");
+const co_gi=document.getElementById("co_gi");
+const co_so=document.getElementById("co_so");
+const co_sor=document.getElementById("co_sor");
+const co_ma2=document.getElementById("co_ma2");
+const co_tr2=document.getElementById("co_tr2");
+const co_gi2=document.getElementById("co_gi2");
+const co_so2=document.getElementById("co_so2");
+const co_sor2=document.getElementById("co_sor2");
+const co_mar2=document.getElementById("co_mar2");
+const co_trr2=document.getElementById("co_trr2");
+const co_gir2=document.getElementById("co_gir2");
+const co_sore2=document.getElementById("co_sore2");
+const co_sorr2=document.getElementById("co_sorr2");
+const precios_pizarra=document.getElementById("precios_pizarra");
+
+
+const fechaDeManana = () => {
+    let hoy = new Date();
+    let DIA_EN_MILISEGUNDOS = 24 * 60 * 60 * 1000;
+    let manana = new Date(hoy.getTime() - DIA_EN_MILISEGUNDOS);
+    return manana;
+};
+var fayer=fechaDeManana();
+var fayer2=fayer.toISOString().slice(0, 10)
+console.log(fayer2)
+  
+  
+  
+  fetch('https://api.bcr.com.ar/gix/v1.0/Login', {
+    method: 'POST',
+    headers: {
+        'api_key': '4891BD99-980E-ED11-9435-00155D09A733',
+        'secret': '719fc1f72eb2952ac44b9f22781812f89d14d4815909331f014bed35a99fb3f7'
+    },
+  })
+  .then(response => response.json())
+  .then(data=>{ console.log(data)
+        const miToken=(data.data.token)
+        console.log(miToken);
     
+const myHeader = new Headers({
+    'Authorization': miToken});
+
+const myInit = { 
+    method: 'GET',
+    headers: myHeader,
+    mode: 'cors',     
+    cache: 'default'    
+};
+
+
+const myrequest = new Request('https://api.bcr.com.ar/gix/v1.0/PreciosCamara?idGrano=2&fechaConcertacionDesde='+fayer2+'&fechaConcertacionHasta='+fayer2,myInit);
+fetch(myrequest)
+.then(response => response.json())
+.then(data => {console.log(data);
+
+
+    var fecha=new Date(data.data[0].fecha_Operacion_Pizarra)
+
+    precios_pizarra.textContent="Precios Pizarra del dia "+fecha.toLocaleDateString();
+    
+    if(data.data[0].esEstimado_Cotizacion==false)
+    {
+       
+        co_ma.textContent="$"+(data.data[0].precio_Cotizacion)
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_mar2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_mar2.textContent="TEND ⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_mar2.textContent="TEND 🟰"
+        }
+    }
+    else
+    {
+        
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_mar2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_mar2.textContent="TEND ⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_mar2.textContent="TEND 🟰"
+        }
+        co_ma.textContent="S/C"
+        co_ma2.textContent="(Estimativo)$"+(data.data[0].precio_Cotizacion)
+    }
+
+  
+
+})
+.catch(err=> console.log(`Hubo error ${err}`))  
+
+const myrequest3 = new Request('https://api.bcr.com.ar/gix/v1.0/PreciosCamara?idGrano=1&fechaConcertacionDesde='+fayer2+'&fechaConcertacionHasta='+fayer2,myInit);
+fetch(myrequest3)
+.then(response => response.json())
+.then(data => {console.log(data);
+
+
+    if(data.data[0].esEstimado_Cotizacion==false)
+    {
+        co_tr.textContent="$"+(data.data[0].precio_Cotizacion)
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_trr2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_trr2.textContent="TEND ⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_trr2.textContent="TEND 🟰"
+        }
+    }
+    else
+    {  
+
+    if(data.data[0].movimiento_Cotizacion==1)
+    {
+        co_trr2.textContent="TEND ⬆️"
+
+    }else if (data.data[0].movimiento_Cotizacion==2)
+    {
+        co_trr2.textContent="TEND ⬇️"
+
+    }else if (data.data[0].movimiento_Cotizacion==3)
+    {
+        co_trr2.textContent="TEND 🟰"
+    }
+        co_tr.textContent="S/C"
+        co_tr2.textContent="(Estimativo)$"+(data.data[0].precio_Cotizacion)
+    }
+
+
+
+
+})
+.catch(err=> console.log(`Hubo error ${err}`))  
+
+const myrequest5 = new Request('https://api.bcr.com.ar/gix/v1.0/PreciosCamara?idGrano=20&fechaConcertacionDesde='+fayer2+'&fechaConcertacionHasta='+fayer2,myInit);
+fetch(myrequest5)
+.then(response => response.json())
+.then(data => {console.log(data);
+
+    if(data.data[0].esEstimado_Cotizacion==false)
+    {
+        co_gi.textContent="$"+(data.data[0].precio_Cotizacion)
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_gir2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_gir2.textContent="TEND ⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_gir2.textContent="TEND 🟰"
+        }
+    }
+    else
+    {
+  
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_gir2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_gir2.textContent="TEND⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_gir2.textContent="TEND 🟰"
+        }
+        co_gi.textContent="S/C"
+        co_gi2.textContent="(Estimativo)$"+(data.data[0].precio_Cotizacion)
+    }
+
+})
+.catch(err=> console.log(`Hubo error ${err}`))  
+
+const myrequest6 = new Request('https://api.bcr.com.ar/gix/v1.0/PreciosCamara?idGrano=21&fechaConcertacionDesde='+fayer2+'&fechaConcertacionHasta='+fayer2,myInit);
+fetch(myrequest6)
+.then(response => response.json())
+.then(data => {console.log(data);
+
+    if(data.data[0].esEstimado_Cotizacion==false)
+    {
+        co_so.textContent="$"+(data.data[0].precio_Cotizacion)
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_sore2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_sore2.textContent="TEND ⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_sore2.textContent="TEND ="
+        }
+    }
+    else
+    {
+    
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_sore2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_sore2.textContent="TEND ⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_sore2.textContent="TEND ="
+        }
+        co_so.textContent="S/C";
+        co_so2.textContent="(Estimativo)$"+(data.data[0].precio_Cotizacion)
+    }
+
+
+})
+.catch(err=> console.log(`Hubo error ${err}`))  
+
+const myrequest7 = new Request('https://api.bcr.com.ar/gix/v1.0/PreciosCamara?idGrano=3&fechaConcertacionDesde='+fayer2+'&fechaConcertacionHasta='+fayer2,myInit);
+fetch(myrequest7)
+.then(response => response.json())
+.then(data => {console.log(data);
+
+    if(data.data[0].esEstimado_Cotizacion==false)
+    {
+        co_sor.textContent="$"+(data.data[0].precio_Cotizacion)
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_sorr2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_sorr2.textContent="TEND ⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_sorr2.textContent="TEND ="
+        }
+    }else
+    {
+       
+        if(data.data[0].movimiento_Cotizacion==1)
+        {
+            co_sorr2.textContent="TEND ⬆️"
+
+        }else if (data.data[0].movimiento_Cotizacion==2)
+        {
+            co_sorr2.textContent="TEND ⬇️"
+
+        }else if (data.data[0].movimiento_Cotizacion==3)
+        {
+            co_sorr2.textContent="TEND ="
+        }
+        co_sor.textContent="S/C";
+        co_sor2.textContent="(Estimativo)$"+(data.data[0].precio_Cotizacion)
+    }
+
+
+})
+.catch(err=> console.log(`Hubo error ${err}`))  
+
+
+const myrequest2 = new Request('https://api.bcr.com.ar/gix/v1.0/Cotizacion',myInit);
+
+fetch(myrequest2)
+.then(response => response.json())
+.then(data => {console.log(data);
+console.log(data.data[0].cotizacionCompraDivisas)
+c_cd.textContent="$"+Math.floor(data.data[0].cotizacionCompraDivisas)
+c_cb.textContent="$"+Math.floor(data.data[0].cotizacionCompraBilletes)
+c_vd.textContent="$"+Math.floor(data.data[0].cotizacionVentaDivisas)
+c_vb.textContent="$"+Math.floor(data.data[0].cotizacionVentaBilletes)
+fecha.textContent=(data.data[0].fechaCotizacionBilletes)
+fechab.textContent=(data.data[0].fechaCotizacionBilletes)
+})
+.catch(err=> console.log(`Hubo error ${err}`))
+
+
+})
+
+
+
+
+const myrequest4= new Request('https://api.bluelytics.com.ar/v2/latest');
+fetch(myrequest4)
+.then(response => response.json())
+.then(data => {console.log(data);
+cB_cb.textContent=("$"+data.blue.value_buy)
+cB_vb.textContent=("$"+data.blue.value_sell)})
+.catch(err=> console.log(`Hubo error ${err}`))  
+
+
+
+
+
+
 
         
     
 
         
 
-    
+WTzgBVz7ivt3efLkUu67ejZihJoMTU0JFiLG7ZUC
 
 
             
