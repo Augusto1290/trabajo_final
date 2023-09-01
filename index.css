@@ -5,6 +5,7 @@ body{
     background-color: #008f39;
 }
 
+
 #icono{
     height:50px ;
     width: 4.5%px;
@@ -46,67 +47,10 @@ body{
     display: none ;
 }
 
-.logo-header{
-    height: 90px;
-    display: flex;
-    position: relative;
-    width: 4.5%;
-    border-radius: 5px;
-    margin-left: 0;
-    
-}
-
-header{
-    display: flex;
-    background-color: #008f39;
-    width: 100%;
-}
-
-.barra_de_navegacion{
-    height: 100px;
-    background-color:#008f39;
-    width: 100%;
-    justify-content: center;
-    margin: auto;
-   /* float:left;*/
-    border-bottom:  solid;
-    border-bottom-color:  gold;
-}
-
-.navbar-nav{
-    width: 100%;
-}
-.navbar-nav ul{
-    list-style: none;
-    position: relative;
-    display: inline-block;
-    
-
-}
-.navbar-nav > li {
-    display: inline-block;
-    background-color:#008f39;
-    text-align: center;
-    position: relative;
-    padding-top: 17px;
-    
-    }
 
 
-.navbar-nav > li > a{
-    color: white;
-    padding: 20px;
-    text-align:center;
-    font-family: monospace;
-    font-size: 22px;
-    display: flex;
-    text-decoration: none;
-    display: block;
-    border-radius: 10px;
 
 
-    
-}
 @media screen and (max-width: 1287px){
     .navbar-nav > li >a
     {
@@ -117,10 +61,13 @@ header{
         font-size: 12px;
     }
 }
+@media screen and (min-width: 881px){
+
 .navbar-links > li >  a:hover{
     background: gold;
     color: #008f39;
     
+    }
 }
 
 
@@ -170,16 +117,17 @@ header{
 
 
 .grid{
-    margin-top: 0;
+    margin-top: 10px;
     display: grid;  
     grid-template-columns:1fr 1fr 1fr;
     height: 20%;
     text-align: center;
     line-height: 200px;
+    gap: 15px;
    
 }
 @media screen and (max-width:500px){.grid{
-    margin-top: 0;
+    margin-top: 10px;
     display: grid;  
     grid-template-columns:repeat(auto-fit,minmax(150px, 3fr));
     height: 20%;
@@ -198,11 +146,9 @@ header{
     box-shadow: 5px 1px  10px rgba(0, 0, 0, 0.2);
     background-color: white;
     cursor: pointer;
-}
-.cajas {
     text-decoration: none;
     color:#008f39;
- }
+}
 
  
  .cajas:hover{
@@ -210,53 +156,12 @@ header{
     transform: translatey(-1%);
     background-color: gold;
     color:#008f39;
-}
+    }
  
 
 
 
-.slider{
-   
-    width: 100%;
-    height: 700px;
-    margin: 0;
-    background-color:#008f39;
-    overflow: hidden;
-}
 
-.slider ul{
-    display: flex;
-    width: 300%;
-    animation: cambio 10s infinite linear;
-    
-}
-
-.slider  li{
-    
-    left: 0;
-    top: 0;
-    width: 100%;
-    list-style: none;
-}
-
-.slider img{
-    width: 100%;
-    height: 700px;
-    object-fit:contain;
-}
-
-
-@keyframes cambio{
-    0%{margin-left: 0;}
-    30%{margin-left: 0;}
-
-    35%{margin-left: -100%;}
-    65%{margin-left: -100%;}
-
-    70%{margin-left: -200%;}
-    100%{margin-left: -200%;}
-    
-}
 
 
 
@@ -264,7 +169,7 @@ header{
         color: #008f39;
     }
     
-.botones{
+    .botones{
        text-align: center;
        width: 100%;
        display: flex;
@@ -328,14 +233,17 @@ header{
         margin: 0 auto;
     }
     
-    .footer-logo {
+    .footer-logo a {
         font-size: 24px;
-        font-weight: bold;
+        color: #fff ;
+        padding: 15px;
+    }
+    .footer-logo a:hover {
+        
+        color: gold;
     }
     
     .footer-links a {
-        color: #fff;
-        text-decoration: none;
         margin-right: 20px;
     }
     
@@ -367,6 +275,7 @@ header{
     }
     ul {
         list-style: none;
+        padding: 0; 
     }
 
 
@@ -387,6 +296,7 @@ header{
         align-items: center;
         padding: 0;
         margin: 0;
+        z-index: 999;
     }
     
     .navbar-links li {
@@ -454,8 +364,6 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        
-       
         overflow: hidden;
         position: relative;
     }
@@ -479,9 +387,7 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
-            
-           
             overflow: hidden;
             position: relative;
         }
-    }
+       }

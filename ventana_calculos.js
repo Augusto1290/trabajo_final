@@ -1,7 +1,7 @@
 'use strict'
 
 
-
+document.getElementById('m_v').style.visibility="collapse"
 const li =document.querySelectorAll('.li')
 const bloque =document.querySelectorAll('.bloque')
 
@@ -352,11 +352,11 @@ function mermas(){
             
             if (document.getElementById('checkbox').checked)
             {
-                document.getElementById('m_v').style.opacity="1"
-              
+                document.getElementById('m_v').style.visibility="visible"
+                document.getElementById('m_v').style.opacity="1"             
             }
             else{
-                document.getElementById('m_v').style.opacity="0"
+                document.getElementById('m_v').style.visibility="collapse"
               
             }
 
