@@ -1,4 +1,12 @@
 
+document.addEventListener("DOMContentLoaded", function() {
+  const navbarIcon = document.getElementById("navbarIcon");
+  const navbarLinks = document.getElementById("navbarLinks");
+
+  navbarIcon.addEventListener("click", function() {
+      navbarLinks.classList.toggle("active");
+  });
+});
 
   var k;
   var lon;
@@ -43,5 +51,19 @@
   }
 })
 
+///slider
 
- 
+const sliderImages = document.querySelectorAll(".slider-image");
+        let currentImageIndex = 0;
+
+        function changeImage() {
+            // Oculta la imagen actual
+            sliderImages[currentImageIndex].style.opacity = 0;
+
+            // Calcula el índice de la próxima imagen
+            currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+
+            // Muestra la próxima imagen
+            sliderImages[currentImageIndex].style.opacity = 1;
+        }
+        setInterval(changeImage, 3000);

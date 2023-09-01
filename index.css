@@ -1,9 +1,13 @@
 *{margin:0;
-box-sizing: border-box;}
+box-sizing: border-box;
+}
+body{
+    background-color: #008f39;
+}
 
-.icon_w{
-    height: 13px;
-    width: 14px;
+#icono{
+    height:50px ;
+    width: 4.5%px;
 }
 
 .btn_w{
@@ -113,7 +117,7 @@ header{
         font-size: 12px;
     }
 }
-.navbar-nav > li >  a:hover{
+.navbar-links > li >  a:hover{
     background: gold;
     color: #008f39;
     
@@ -168,40 +172,21 @@ header{
 .grid{
     margin-top: 0;
     display: grid;  
-    grid-template-columns:auto auto auto;
+    grid-template-columns:1fr 1fr 1fr;
     height: 20%;
     text-align: center;
     line-height: 200px;
    
 }
-
-@media screen and (max-width:550px){
-    .grid{
-        margin-top: 0;
-        display: grid;  
-        grid-template-columns:auto auto auto;
-        height: 250px;
-        text-align: center;
-        line-height: 200px;
-       
-    }
-    .cajas{
-        
-        height: 125px;
-        border-style: solid;
-        border-color: #008f39;
-        font-family: monospace;
-        text-align: center;
-        align-items: center;
-        font-size: 30px;
-        list-style: none;
-        box-shadow: 5px 1px  10px rgba(0, 0, 0, 0.2);
-        background-color: white;
-        cursor: pointer;
-        text-decoration: none;
-        color:#008f39;
-    }
-}
+@media screen and (max-width:500px){.grid{
+    margin-top: 0;
+    display: grid;  
+    grid-template-columns:repeat(auto-fit,minmax(150px, 3fr));
+    height: 20%;
+    text-align: center;
+    line-height: 200px;
+   
+}}
 
 .cajas  {
     border-style: solid;
@@ -273,100 +258,12 @@ header{
     
 }
 
-.pie-pagina{
-    background-color: #008f39;
-    width: 100%;
-    height: 300px;
-    }
-
-    .pie-pagina .grupo-1{
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        padding: 45px 0px;
-        width: 100%;
-        max-width: 1200px;
-        grid-gap: 50px;
-    }
-    .pie-pagina .grupo-1 .box figure{
-        width: 100%;
-        height: 100%;
-        display:inline-flexbox;
-    }
-
-    .pie-pagina .grupo-1 .box figure img{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        width: 250px;
-    }
-    .pie-pagina .grupo-1 .box h3{
-        color: white;
-        margin-bottom: 25px;
-        font-size: 20px;
-        font-family: monospace;
-         
-    }
- 
-
-    .pie-pagina .grupo-1 .red-social a{
-        display: inline-block;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        color: white;
-        text-align: center;
-    }
-
-    .pie-pagina .grupo-1 .red-social a:hover{
-        color: red;
-    }
-    .red-social{
-        text-align: center;
-    }
-    h3{
-        text-align: center;
-
-    }
-
- 
-
-    .pie-pagina .grupo-2{
-background-color: #008f39;
-padding: 15px 10px0;
-text-align: center;
-color:#fff;
-
-}
-.pie-pagina .grupo-2 small{
-  font-size: 15px;
-  font-family: monospace;
-  bottom: 0;
-    }
 
 
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{ 
-        grid-template-columns: repeat(1,1fr);
-        padding: 35px 0px;
-        width: 100%;
-        grid-gap: 30px;
-        background-color: #008f39;
+    .footer-links a:hover{
+        color: #008f39;
     }
-  .contenedor_cafe {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    }
-    .cafe{
-        height: 50px;
-        margin: auto;
-    }
-}
     
-
-
-
 .botones{
        text-align: center;
        width: 100%;
@@ -376,12 +273,6 @@ color:#fff;
     }
 
 
-
-.play_img{
-    height: 75px;
-    padding: auto;
-    
-}
 
     #loc{
      font-family: monospace;
@@ -404,12 +295,9 @@ color:#fff;
     #clima{
         
         padding: 30px;
-
         margin:0 0 0 50px;
         
     }
-        
-    
 
     #caja_clima{
         float: right;
@@ -426,21 +314,174 @@ color:#fff;
         display: inline-block;
         list-style: none; 
        }
-
-    .pie_de_pagina{
-      font-family: monospace;
-      padding: 5px;
-      height: 25px;
-      color: white;
-      text-align: center;
-      width: 100%;
-      border-top-style: solid;
-      border-top-color: white;
-      bottom: 0;
-      position: absolute;
+    .footer {
+        background-color: #008f39;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .footer-links a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        font-family: monospace;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .footer-logo {
+            margin-bottom: 10px;
+        }
+    
+        .footer-links  {
+            margin-top: 10px;
+        }
     }
 
-    
+    .play{
+        height: 80px;
+        width: 200px;
+    }
+    ul {
+        list-style: none;
+    }
 
-    
 
+    .navbar {
+        background-color:#008f39;
+        border-bottom:  solid;
+        border-bottom-color:  gold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        color: white;
+    }
+    
+    .navbar-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navbar-links li {
+        margin-right: 20px;
+    }
+    
+    .navbar-links a {
+        text-decoration: none;
+        color: white;
+        color: white;
+        padding: 20px;
+        text-align:center;
+        font-family: monospace;
+        font-size: 22px;
+        font-family: monospace;
+        font-size: 22px;
+        border-radius: 20px;
+    }
+    
+    /* Estilo para el icono de la barra de navegación en pantallas pequeñas */
+    .navbar-icon {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+       
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: gold;
+        margin: 3px 0;
+    }
+    
+    /* Estilo para pantallas pequeñas */
+    @media screen and (max-width: 880px) {
+        .navbar-links {
+            display: none;
+            flex-direction: column;
+            background-color: #008f39;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+    
+        .navbar-icon {
+            display: flex;
+        }
+    }
+
+
+    .slider-container {
+
+        width: 500px;
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Estilos para las imágenes */
+    .slider-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: opacity 1s ease-in-out;
+    }
+
+    @media screen and (max-width: 525px){
+        .slider-container {
+
+           max-width: 80%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+           
+            overflow: hidden;
+            position: relative;
+        }
+    }

@@ -18,17 +18,15 @@ body{
     width: 100%;
     border-radius: 5px;;
 }
-
 .contenedor .ul{
     width: 100%;
     height: 185px;
     background-color:#008f39;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: flex-start;
     align-items:center;
-
 }
+
 .contenedor .li{
     background-color:#008f39;
     height: 100px;
